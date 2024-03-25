@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits & Vegetables Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('fruits_vegetables.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .heading {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .upload-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .upload-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-container {
+            text-align: center;
+        }
+        .recognize-btn, .predict-btn {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            Hello User, please upload your food image:
+        </div>
+        <div class="upload-container">
+            <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+            <label for="imageUpload" class="upload-btn">Upload Image</label>
+        </div>
+        <div class="btn-container">
+            <button class="recognize-btn" onclick="recognizeImage()">Recognize</button>
+            <button class="predict-btn" onclick="predictCalories()">Predict Calories</button>
+        </div>
+        <script>
+            function recognizeImage() {
+                // Add logic to recognize the uploaded image
+                alert("Image recognized!");
+            }
+
+            function predictCalories() {
+                // Add logic to predict calories
+                alert("Calories predicted!");
+            }
+        </script>
+    </div>
+</body>
+</html>
